@@ -1873,7 +1873,7 @@
 	color: var(--basic-icon);
 	font-family: "icomoon";
 	font-size: 12px;
-	line-height: 12px;
+	line-height: 1px;
 	position: absolute;  
 	top: 50%;
 	left: 0;
@@ -2332,6 +2332,8 @@
 	line-height: 24px;
 }
 
+
+
 .visually-hidden {
     position: absolute;  
     width: 1px;
@@ -2345,7 +2347,7 @@
     overflow: hidden;
 }
 
-
+ /* Animations */
 @keyframes bounce {
 	0% {
 	  transform: translateY(-2000px);
