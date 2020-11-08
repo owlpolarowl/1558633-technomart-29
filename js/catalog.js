@@ -1,22 +1,22 @@
+const productList = document.querySelector('.product-list');
 const buyButtons = document.querySelectorAll('.buy-button');
-const modalClose = document.querySelectorAll('.modal-close');
 const popupProductAdd = document.querySelector('.product-add');
+const modalClose = document.querySelector('.modal-close');
 
-for (let i = 0; i < buyButtons.length; i++) {
-  buyButtons[i].addEventListener('click', function(evt) {
-    evt.preventDefault();
 
-    popupProductAdd.classList.add('modal-show');
-  });
+productList.addEventListener('click', function(evt) {
+  let target = evt.target;
+  if (target.className == 'buy-button') {
+  popupProductAdd.classList.add('modal-show');
 }
+});
 
-for (let i = 0; i < modalClose.length; i++) {
-  modalClose[i].addEventListener('click', function(evt) {
-    evt.preventDefault();
+modalClose.addEventListener('click', function(evt) {
+  evt.preventDefault();
 
-    popupProductAdd.classList.remove('modal-show');
+  popupProductAdd.classList.remove('modal-show');
   });
-}
+
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {

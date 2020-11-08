@@ -545,6 +545,17 @@
 	position: relative;
 }
 
+.login-link:before {
+	content: "\e902";
+	color: var(--basic-icon);
+	font-family: "icomoon";
+	font-size: 17px;
+	transition: .2s;
+	position: absolute;
+	top: 12px;
+	left: 19px;
+}
+
 .login-link:hover:before,
 .login-link:focus:before {
 	color: var(--login-icon-hover);
@@ -1232,8 +1243,6 @@
 }
 
 .slider-services-button {
-	display: flex;
-	flex-direction: column;
 	color: var(--white);
 	font-family: var(--main-font);
 	font-size: 21px;
@@ -1388,6 +1397,7 @@
 	margin-bottom: 25px;
 	width: 300px;
 	height: 158px;
+
 }
 
 .about-contacts .button {
@@ -1636,6 +1646,7 @@
 .modal-show {
 	display: block;
 	animation: bounce 0.6s;
+	overflow: auto;
 }
 
 .modal-error {
@@ -2133,6 +2144,16 @@
 }
 
 
+.price-control input::-webkit-outer-spin-button,
+.price-control input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.price-control input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .filter-button {
 	font-size: 13px;
 	text-transform: uppercase;
@@ -2401,6 +2422,7 @@
   }
   
   [class^="icon-"], [class*=" icon-"] {
+
 	font-family: "icomoon";
 	speak: never;
 	font-style: normal;
@@ -2408,8 +2430,11 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-
+  
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
   }
+  
   
   .icon-arrow:before {
 	content: "\e900";
