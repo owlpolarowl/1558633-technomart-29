@@ -984,10 +984,6 @@
 	list-style: none;
 }
 
-.inner-page .product-list {
-	grid-template-columns: 1fr 1fr 1fr;
-}
-
 .product-list-item {
 	font-family: var(--sub-font);
 	width: 220px;
