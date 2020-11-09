@@ -171,6 +171,4 @@ guaranteeButton.addEventListener('click', function(evt) {
 creditButton.addEventListener('click', function(evt) {
   evt.preventDefault();
 
-
-//   sliderControl.classList.add('credit-button');
 });

@@ -339,9 +339,11 @@
   }
   
   .bookmarks {
-    padding-left: 43px;
+	padding-left: 43px;
   }
-  
+  .inner-page .bookmarks {
+	width: 164px;
+  }
   .bookmarks:before {
     content: "";
     width: 14px;
@@ -356,9 +358,13 @@
   }
   
   .basket {
-    padding-left: 49px;
+	padding-left: 49px;
+	
   }
-
+  .inner-page .basket {
+	padding-left: 35px;
+	width: 136px;
+  }
   .basket:before {
 	content: "";
 	width: 15px;
@@ -367,7 +373,7 @@
 	background-repeat: no-repeat;
 	position: absolute;
 	top: 13px;
-	left: 26px;
+	left: 11px;
 	transition: .2s;
 	opacity: .3;
 }
