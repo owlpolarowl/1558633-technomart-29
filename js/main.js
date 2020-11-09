@@ -1,21 +1,22 @@
 const feedbackButton = document.querySelector('.button-feedback');
 
 const buyButtons = document.querySelectorAll('.buy-button');
-const modalClose = document.querySelector('.modal-close');
 const productList = document.querySelector('.product-list');
 const popupProductAdd = document.querySelector('.product-add');
+const popupProductClose = popupProductAdd.querySelector('.modal-close');
 const modalWindow = document.querySelectorAll('.modal');
-const feedback = document.querySelector('.feedback');
 // MAP
-const mapLink = document.querySelector(".about-map");
+const mapLink = document.querySelector('.about-map');
 const popupMap = document.querySelector('.modal-map');
-const mapClose = popupMap.querySelector(".modal-close");
-
-const feedbackForm = feedback.querySelector('.feedback-form');
-
-const name = feedback.querySelector('[name=name]');
-const email = feedback.querySelector('[name=email]');
-const message = feedback.querySelector('.message');
+const mapClose = popupMap.querySelector('.modal-close');
+//feedback
+const feedback = document.querySelector('.feedback');
+const feedbackForm = document.querySelector('.feedback-form');
+const name = feedbackForm.querySelector('[name=name]');
+const email = feedbackForm.querySelector('[name=email]');
+const message = feedbackForm.querySelector('.message');
+const feedbackClose = feedback.querySelector('.modal-close');
+//services
 const sliderControl = document.querySelector('.slider-services-control');
 const buttonList = document.querySelectorAll('.slider-services-button');
 const slideTitle = document.querySelector('.slider-services-title');
@@ -37,6 +38,8 @@ try {
   isStorageSupport = false;
 }
 
+
+
 // Товары
 productList.addEventListener('click', function(evt) {
   let target = evt.target;
@@ -45,31 +48,24 @@ productList.addEventListener('click', function(evt) {
 }
 });
 
-modalClose.addEventListener('click', function(evt) {
-    evt.preventDefault();
-    popupProductAdd.classList.remove('modal-show');
+popupProductClose.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  popupProductAdd.classList.remove('modal-show');
   });
 
 
-window.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 27) {
-      if (feedbackForm.classList.contains('modal-show')) {
-        evt.preventDefault();
-  
-        feedbackForm.classList.remove('modal-show');
-        feedbackForm.classList.remove('modal-error');
-      }
-  
-      popupMap.classList.remove('modal-show');
-      popupProductAdd.classList.remove('modal-show');
-    }
-  });
+
+mapClose.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  popupMap.classList.remove('modal-show');
+});
+
 
 // Модальное окно с фидбеком
 feedbackButton.addEventListener('click', function(evt) {
   evt.preventDefault();
 
-  feedbackForm.classList.add('modal-show');
+  feedback.classList.add('modal-show');
   
   if (storageName && storageEmail) {
     name.value = storageName;
@@ -86,9 +82,14 @@ feedbackButton.addEventListener('click', function(evt) {
   }
 });
 
+feedbackClose.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  feedback.classList.remove('modal-show');
+});
+
 
  // Обработчик отправки данных формы
-feedbackButton.addEventListener('submit', function(evt) {
+ feedbackForm.addEventListener('submit', function(evt) {
   if (!name.value || !email.value || !message.value) {
     evt.preventDefault();
 
@@ -105,48 +106,42 @@ feedbackButton.addEventListener('submit', function(evt) {
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (feedbackForm.classList.contains('modal-show')) {
-      evt.preventDefault();
+    // if (feedback.classList.contains('modal-show')) {
+    //   evt.preventDefault();
 
-      feedbackForm.classList.remove('modal-show');
-      feedbackForm.classList.remove('modal-error');
-    }
+      feedback.classList.remove('modal-show');
+      feedback.classList.remove('modal-error');
+    // }
 
     popupMap.classList.remove('modal-show');
     popupProductAdd.classList.remove('modal-show');
   }
 });
 
+
+
 // Карта
 
-mapLink.addEventListener("click", function (evt) {
+mapLink.addEventListener('click', function (evt) {
     evt.preventDefault();
-    popupMap.classList.add("modal-show");
+    popupMap.classList.add('modal-show');
   });
   
-  mapClose.addEventListener("click", function (evt) {
+  mapClose.addEventListener('click', function (evt) {
     evt.preventDefault();
-    popupMap.classList.remove("modal-show");
+    popupMap.classList.remove('modal-show');
   });
   
-  window.addEventListener("keydown", function (evt) {
+  window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
-      if (popupMap.classList.contains("modal-show")) {
+      if (popupMap.classList.contains('modal-show')) {
         evt.preventDefault();
-        popupMap.classList.remove("modal-show");
+        popupMap.classList.remove('modal-show');
       }
     }
   });
-//  Cлайдер с делегированием, который работает, но не меняет картиночки
 
-// sliderControl.addEventListener('click', function(event) {
-//     let target = event.target;
-//     if (target.className == 'slider-button-button') {
-//         buttonList.classList.remove('slider-button-active');
-//     };
-//   });
-
-// Слайдер 2, который работает
+// slider services
 
 function removeActive() {
   for (let i = 0; i < buttonList.length; i++) {
@@ -164,23 +159,18 @@ for (let i = 0; i < buttonList.length; i++) {
 deliveryButton.addEventListener('click', function(evt) {
   evt.preventDefault();
 
-  slideTitle.innerHTML = 'Доставка';
-  slideDesc.innerHTML = 'Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!'; 
-//   sliderControl.classList.add('delivery-button');
+  sliderControl.classList.add('delivery-button');
 });
 
 guaranteeButton.addEventListener('click', function(evt) {
   evt.preventDefault();
 
-  slideTitle.innerHTML = 'Гарантия';
-  slideDesc.innerHTML = 'Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его<br> возгоранием, вы всегда можете быть уверены в нашей<br>гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.';
-//   sliderControl.classList.add('guarantee-button');
+  sliderControl.classList.add('guarantee-button');
 });
 
 creditButton.addEventListener('click', function(evt) {
   evt.preventDefault();
 
-  slideTitle.innerHTML = 'Кредит';
-  slideDesc.innerHTML = 'Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.';
+
 //   sliderControl.classList.add('credit-button');
 });

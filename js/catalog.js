@@ -6,7 +6,7 @@ const modalClose = document.querySelector('.modal-close');
 
 productList.addEventListener('click', function(evt) {
   let target = evt.target;
-  if (target.className == 'buy-button') {
+  if (target.className === 'buy-button') {
   popupProductAdd.classList.add('modal-show');
 }
 });
