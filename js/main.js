@@ -106,8 +106,6 @@ feedbackClose.addEventListener('click', function (evt) {
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    // if (feedback.classList.contains('modal-show')) {
-    //   evt.preventDefault();
 
       feedback.classList.remove('modal-show');
       feedback.classList.remove('modal-error');
