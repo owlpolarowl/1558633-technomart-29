@@ -110,7 +110,7 @@
 	--header-bg: #F3F7F8;
 	--main-bg: #FFF;
 	--services-bg: #F1F5F7;
-	--login-icon-hover: #3D546F;
+	--login-icon-hover: #3D546F; 
 	--basic-icon: #C5C5C5;
 	--range-button-bg: rgba(255, 255, 255, .3);
 	--range-button-hover: rgba(197, 197, 197, .3);
@@ -559,11 +559,11 @@ img {
 
 .login-link:hover svg path,
 .login-link:focus svg path {
-    fill: var(--buttons-svg-hover);
+    fill: var(--login-icon-hover);
 }
 
 .login-link:active svg path {
-    fill: var(--borders-grey);
+    fill: var(--basic-icon);
 }
 
 
@@ -891,7 +891,7 @@ img {
     cursor: pointer;
 }
 
-.slider-prev{
+.slider-prev {
     position: absolute;
     top: -144px;
     left: 24px;
@@ -1963,7 +1963,7 @@ img {
 }
 
 .filter-option {
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 	padding-left: 35px;
 }
 
@@ -2184,7 +2184,7 @@ img {
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
-	padding: 7px 16px 10px 20px;
+	padding: 7px 14px 11px 22px;
 	background-color: var(--filter-bg);
 }
 
