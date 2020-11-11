@@ -266,6 +266,7 @@ img {
 	opacity: 1;
 }
 
+
 .search-input {
 	color: var(--white);
 	font-family: var(--main-font);
@@ -296,6 +297,10 @@ img {
 	top: 12px;
 	left: 17px;
 	opacity: 0.3;
+}
+
+.search-input:focus + svg {
+	opacity: 1;
 }
 
 .search-field:hover svg,
@@ -988,7 +993,6 @@ img {
 	display: block;
 	font-family: var(--sub-font);
 	width: 220px;
-	height: 318px;
 	margin-top: 20px;
 	margin-right: 20px;
 	background-color: var(--white);
@@ -996,6 +1000,7 @@ img {
 	box-sizing: border-box;
 	transition: .2s;
 	position: relative;
+	padding-bottom: 73px;
 }
 
 .product-list-item:nth-child(4n) {
