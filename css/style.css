@@ -2,14 +2,12 @@
 	font-family: "Cuprum";
 	font-style: normal;
 	font-weight: 400;
-	src: url("../fonts/cuprum/cuprum-v12-latin-cyrillic-regular.eot");
-	/* IE9 Compat Modes */
+	src: url("../fonts/cuprum/cuprum-v12-latin-cyrillic-regular.eot"); /* IE9 Compat Modes */
 	src: local("Cuprum Regular"), local("Cuprum-Regular"), url("../fonts/cuprum/cuprum-v12-latin-cyrillic-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
 	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-regular.woff2") format("woff2"), /* Super Modern Browsers */
 	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-regular.woff") format("woff"), /* Modern Browsers */
 	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-regular.ttf") format("truetype"), /* Safari, Android, iOS */
-	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-regular.svg#Cuprum") format("svg");
-	/* Legacy iOS */
+	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-regular.svg#Cuprum") format("svg"); /* Legacy iOS */
 }
 
 /* cuprum-700 - latin_cyrillic */
@@ -18,14 +16,12 @@
 	font-family: "Cuprum";
 	font-style: normal;
 	font-weight: 700;
-	src: url("../fonts/cuprum/cuprum-v12-latin-cyrillic-700.eot");
-	/* IE9 Compat Modes */
+	src: url("../fonts/cuprum/cuprum-v12-latin-cyrillic-700.eot"); /* IE9 Compat Modes */
 	src: local("Cuprum Bold"), local("Cuprum-Bold"), url("../fonts/cuprum/cuprum-v12-latin-cyrillic-700.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
 	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-700.woff2") format("woff2"), /* Super Modern Browsers */
 	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-700.woff") format("woff"), /* Modern Browsers */
 	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-700.ttf") format("truetype"), /* Safari, Android, iOS */
-	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-700.svg#Cuprum") format("svg");
-	/* Legacy iOS */
+	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-700.svg#Cuprum") format("svg"); /* Legacy iOS */
 }
 
 /* cuprum-italic - latin_cyrillic */
@@ -34,14 +30,12 @@
 	font-family: "Cuprum";
 	font-style: italic;
 	font-weight: 400;
-	src: url("../fonts/cuprum/cuprum-v12-latin-cyrillic-italic.eot");
-	/* IE9 Compat Modes */
+	src: url("../fonts/cuprum/cuprum-v12-latin-cyrillic-italic.eot"); /* IE9 Compat Modes */
 	src: local("Cuprum Italic"), local("Cuprum-Italic"), url("../fonts/cuprum/cuprum-v12-latin-cyrillic-italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
 	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-italic.woff2") format("woff2"), /* Super Modern Browsers */
 	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-italic.woff") format("woff"), /* Modern Browsers */
 	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-italic.ttf") format("truetype"), /* Safari, Android, iOS */
-	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-italic.svg#Cuprum") format("svg");
-	/* Legacy iOS */
+	url("../fonts/cuprum/cuprum-v12-latin-cyrillic-italic.svg#Cuprum") format("svg"); /* Legacy iOS */
 }
 
 /* PT Sans */
@@ -57,8 +51,7 @@
 	url("../fonts/pt-sans/pt-sans-v12-latin-cyrillic-regular.woff2") format("woff2"), /* Super Modern Browsers */
 	url("../fonts/pt-sans/pt-sans-v12-latin-cyrillic-regular.woff") format("woff"), /* Modern Browsers */
 	url("../fonts/pt-sans/pt-sans-v12-latin-cyrillic-regular.ttf") format("truetype"), /* Safari, Android, iOS */
-	url("../fonts/pt-sans/pt-sans-v12-latin-cyrillic-regular.svg#PTSans") format("svg");
-	/* Legacy iOS */
+	url("../fonts/pt-sans/pt-sans-v12-latin-cyrillic-regular.svg#PTSans") format("svg"); /* Legacy iOS */
 }
 
 /* pt-sans-700 - latin_cyrillic */
@@ -73,8 +66,7 @@
 	url("../fonts/pt-sans/pt-sans-v12-latin-cyrillic-700.woff2") format("woff2"), /* Super Modern Browsers */
 	url("../fonts/pt-sans/pt-sans-v12-latin-cyrillic-700.woff") format("woff"), /* Modern Browsers */
 	url("../fonts/pt-sans/pt-sans-v12-latin-cyrillic-700.ttf") format("truetype"), /* Safari, Android, iOS */
-	url("../fonts/pt-sans/pt-sans-v12-latin-cyrillic-700.svg#PTSans") format("svg");
-	/* Legacy iOS */
+	url("../fonts/pt-sans/pt-sans-v12-latin-cyrillic-700.svg#PTSans") format("svg"); /* Legacy iOS */
 }
 
 :root {
@@ -110,7 +102,7 @@
 	--header-bg: #F3F7F8;
 	--main-bg: #FFF;
 	--services-bg: #F1F5F7;
-	--login-icon-hover: #3D546F; 
+	--login-icon-hover: #3D546F;
 	--basic-icon: #C5C5C5;
 	--range-button-bg: rgba(255, 255, 255, .3);
 	--range-button-hover: rgba(197, 197, 197, .3);
@@ -255,15 +247,14 @@ img {
 }
 
 .search-field svg {
-    position: absolute;
-    top: 12px;
-    left: 17px;
-    opacity: 0.3;
+	position: absolute;
+	top: 12px;
+	left: 17px;
+	opacity: 0.3;
 }
 
-.search-field:focus svg
-.search-field:hover svg {
-    opacity: 1;
+.search-field:focus svg .search-field:hover svg {
+	opacity: 1;
 }
 
 .search-field:hover:before {
@@ -301,19 +292,19 @@ img {
 }
 
 .search-form svg {
-    position: absolute;
-    top: 12px;
-    left: 17px;
-    opacity: 0.3;
+	position: absolute;
+	top: 12px;
+	left: 17px;
+	opacity: 0.3;
 }
 
 .search-field:hover svg,
 .search-field:focus svg {
-    opacity: 1;
+	opacity: 1;
 }
 
 .search-input:focus+svg path {
-    fill: var(--basic-red);
+	fill: var(--basic-red);
 }
 
 .sub-nav-button {
@@ -568,20 +559,19 @@ img {
 }
 
 .login-link svg {
-    position: absolute;
-    top: 14px;
-    left: 18px;
+	position: absolute;
+	top: 14px;
+	left: 18px;
 }
 
 .login-link:hover svg path,
 .login-link:focus svg path {
-    fill: var(--login-icon-hover);
+	fill: var(--login-icon-hover);
 }
 
 .login-link:active svg path {
-    fill: var(--basic-icon);
+	fill: var(--basic-icon);
 }
-
 
 .login-link:hover:before,
 .login-link:focus:before {
@@ -592,28 +582,27 @@ img {
 	padding: 12px 24px;
 }
 
-
 .authorized-link {
 	padding: 12px 57px;
 }
 
-.authorized-link  {
-    position: relative;
-    padding-left: 56px;
-    width: 186px;
-    color: var(--basic-black);
-    font-size: 21px;
-    line-height: 21px;
+.authorized-link {
+	position: relative;
+	padding-left: 56px;
+	width: 186px;
+	color: var(--basic-black);
+	font-size: 21px;
+	line-height: 21px;
 }
 
-.authorized-link  svg {
-    content: "";
-    position: absolute;
+.authorized-link svg {
+	content: "";
+	position: absolute;
 	top: 13px;
 	left: 15px;
-    width: 20px;
-    height: 18px;
-    background-position: 0 0;
+	width: 20px;
+	height: 18px;
+	background-position: 0 0;
 }
 
 .authorized-link:hover:before,
@@ -898,26 +887,26 @@ img {
 }
 
 .slider-control button {
-    padding: 0;
-    width: 22px;
-    height: 40px;
-    background-image: url("../img/icons-svg/arrow.svg");
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+	padding: 0;
+	width: 22px;
+	height: 40px;
+	background-image: url("../img/icons-svg/arrow.svg");
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
 }
 
 .slider-prev {
-    position: absolute;
-    top: -144px;
-    left: 24px;
+	position: absolute;
+	top: -144px;
+	left: 24px;
 }
 
 .slider-next {
-    position: absolute;
-    top: -144px;
-    right: -600px;
-    transform: scale(-1, 1);
+	position: absolute;
+	top: -144px;
+	right: -600px;
+	transform: scale(-1, 1);
 }
 
 .slider-next:hover:before,
@@ -1034,6 +1023,18 @@ img {
 }
 
 .product-list-item:hover .product-list-img {
+	opacity: 0;
+}
+
+.product-list-item:focus-within {
+	box-shadow: var(--basic-shadow);
+}
+
+.product-list-item:focus-within .cart-buttons {
+	opacity: 1;
+}
+
+.product-list-item:focus-within .product-list-img {
 	opacity: 0;
 }
 
@@ -1532,15 +1533,14 @@ img {
 
 .footer-bottom {
 	color: var(--white);
-	/* padding: 35px 0 30px; */
 	background-color: var(--basic-dark-blue);
 }
 
 .footer-bottom .container {
 	min-height: 155px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .footer-bottom a {
@@ -1552,16 +1552,16 @@ img {
 	margin-right: 160px;
 	width: 230px;
 	padding-bottom: 43px;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
 }
 
 .footer-copyright p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 18px;
+	margin: 0;
+	font-size: 16px;
+	line-height: 18px;
 }
 
 .footer-social {
@@ -1590,14 +1590,14 @@ img {
 }
 
 .footer-social-link {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 	justify-content: center;
 	margin-top: 4px;
-    width: 42px;
-    height: 42px;
+	width: 42px;
+	height: 42px;
 	background-color: var(--footer-social-bg);
-    border-radius: 50%;
+	border-radius: 50%;
 }
 
 .footer-social-link:hover,
@@ -1621,20 +1621,19 @@ img {
 }
 
 .feedback-info {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 	width: 286px;
 	padding-bottom: 46px;
 	flex-direction: row;
 }
 
 .footer-feedback {
-    margin-right: 51px;
+	margin-right: 51px;
 }
 
 .footer-designed {
 	padding-left: 0px;
-	
 }
 
 .modal {
@@ -1833,7 +1832,6 @@ img {
 	background-color: var(--basic-blue);
 }
 
-
 /* catalog.html */
 
 .products {
@@ -1877,23 +1875,23 @@ img {
 }
 
 .breadcrumbs-item:not(:last-child) {
-    position: relative;
-    margin-right: 41px;
+	position: relative;
+	margin-right: 41px;
 }
 
 .breadcrumbs-item:last-child::after {
-    display: none;
+	display: none;
 }
 
 .breadcrumbs-item:first-child a:first-child::before {
-    display: block;
-    content: "";
-    margin-top: 2px;
-    width: 14px;
-    height: 12px;
-    background-image: url("../img/icons-svg/home.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+	display: block;
+	content: "";
+	margin-top: 2px;
+	width: 14px;
+	height: 12px;
+	background-image: url("../img/icons-svg/home.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .breadcrumbs a {
@@ -1998,41 +1996,41 @@ img {
 .filter-option label:hover::before,
 .filter-option label:hover::after,
 .filter-input:focus+label::before {
-    opacity: 1;
+	opacity: 1;
 }
 
 .filter-input:disabled+label {
-    opacity: 0.4;
+	opacity: 0.4;
 }
 
 .filter-input:disabled:hover+label::before {
-    opacity: 0.7;
+	opacity: 0.7;
 }
 
 .filter-input-checkbox+label::before {
-    content: "";
-    position: absolute;
-    left: -35px;
-    top: -1px;
-    width: 26px;
-    height: 26px;
-    background-image: url("../img/icons-svg/checkbox-off.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 0.7;
+	content: "";
+	position: absolute;
+	left: -35px;
+	top: -1px;
+	width: 26px;
+	height: 26px;
+	background-image: url("../img/icons-svg/checkbox-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.7;
 }
 
 .filter-input-checkbox:checked+label::before {
-    content: "";
-    position: absolute;
-    left: -35px;
-    top: -1px;
-    width: 26px;
-    height: 26px;
-    background-image: url("../img/icons-svg/checkbox-on.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 0.7;
+	content: "";
+	position: absolute;
+	left: -35px;
+	top: -1px;
+	width: 26px;
+	height: 26px;
+	background-image: url("../img/icons-svg/checkbox-on.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.7;
 }
 
 .filter-radio-list {
@@ -2216,6 +2214,7 @@ img {
 	opacity: .3;
 	cursor: pointer;
 }
+
 .sort-setting-item-1 {
 	margin-left: 70px;
 }
@@ -2385,7 +2384,6 @@ img {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-
 
 /* Animations */
 
