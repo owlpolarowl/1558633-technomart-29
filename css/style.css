@@ -300,6 +300,22 @@ img {
 	background-color: var(--white);
 }
 
+.search-form svg {
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    opacity: 0.3;
+}
+
+.search-field:hover svg,
+.search-field:focus svg {
+    opacity: 1;
+}
+
+.search-input:focus+svg path {
+    fill: var(--basic-red);
+}
+
 .sub-nav-button {
 	display: block;
 	color: var(--white);
@@ -1533,11 +1549,10 @@ img {
 }
 
 .footer-copyright {
-
 	margin-right: 160px;
 	width: 230px;
 	padding-bottom: 43px;
-    font-family: 'Cuprum', Arial, sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
@@ -2329,6 +2344,10 @@ img {
 
 .pagination-item a:active {
 	border-color: var(--basic-red);
+}
+
+.slider-services-description {
+	display: block;
 }
 
 .pagination-item-current a {

@@ -89,13 +89,13 @@ feedbackClose.addEventListener('click', function (evt) {
 
 
  // Обработчик отправки данных формы
- feedbackForm.addEventListener('submit', function(evt) {
+ feedback.addEventListener('submit', function(evt) {
   if (!name.value || !email.value || !message.value) {
     evt.preventDefault();
 
-    feedbackForm.classList.remove('modal-error');
-    feedbackForm.offsetWidth = feedbackForm.offsetWidth;
-    feedbackForm.classList.add('modal-error');
+    feedback.classList.remove('modal-error');
+    feedback.offsetWidth = feedback.offsetWidth;
+    feedback.classList.add('modal-error');
   } else {
     if (isStorageSupport) {
       localStorage.setItem('name', name.value);
